@@ -2,8 +2,8 @@ package main
 
 import (
 	"GoLang_Class/Section1"
-	"GoLang_Class/Section2"
 	"GoLang_Class/Section4"
+	"GoLang_Class/Tasks"
 
 	"fmt"
 )
@@ -13,9 +13,9 @@ func main() {
 	var day int
 	var limit int
 	fmt.Scanln("Please enter the day number (1-7):", &day)
-	fmt.Println("Hello World")
+	fmt.Println("Hello World") // Day 1 Task
 	Section1.Variables()
-	Section2.Task_sec2() // Day 2 Task
+	Tasks.Task_day2() // Day 2 Task
 	fmt.Print("Please enter the temperature:")
 	if _, err := fmt.Scanln(&temp); err == nil {
 		Section4.If_else(temp)
