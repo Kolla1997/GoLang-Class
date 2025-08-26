@@ -2,6 +2,7 @@ package main
 
 import (
 	"GoLang_Class/Section1"
+	"GoLang_Class/Section2"
 	"GoLang_Class/Section4"
 
 	"fmt"
@@ -14,6 +15,7 @@ func main() {
 	fmt.Scanln("Please enter the day number (1-7):", &day)
 	fmt.Println("Hello World")
 	Section1.Variables()
+	Section2.Task_sec2() // Day 2 Task
 	fmt.Print("Please enter the temperature:")
 	if _, err := fmt.Scanln(&temp); err == nil {
 		Section4.If_else(temp)
@@ -32,5 +34,10 @@ func main() {
 	} else {
 		fmt.Println("Error in reading the prime number:", err)
 	}
+
+	// calling function with return values
+	fmt.Println("Addition with return value:", Section4.Add(10, 20))
+	fmt.Println("Subtraction with return value:", Section4.Sub(20, 10))
+	fmt.Println("Multiplication with return value:", Section4.Mult(15, 20))
 
 }
