@@ -1,4 +1,4 @@
-package Section2
+package Section4
 
 func Add(a int, b int) int {
 	return a + b
