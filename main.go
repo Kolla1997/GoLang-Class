@@ -2,6 +2,7 @@ package main
 
 import (
 	"GoLang_Class/Section1"
+	"GoLang_Class/Section2"
 	"GoLang_Class/Section4"
 	"GoLang_Class/Tasks"
 
@@ -36,8 +37,8 @@ func main() {
 	}
 
 	// calling function with return values
-	fmt.Println("Addition with return value:", Section4.Add(10, 20))
-	fmt.Println("Subtraction with return value:", Section4.Sub(20, 10))
-	fmt.Println("Multiplication with return value:", Section4.Mult(15, 20))
+	fmt.Println("Addition with return value:", Section2.Add(10, 20))
+	fmt.Println("Subtraction with return value:", Section2.Sub(20, 10))
+	fmt.Println("Multiplication with return value:", Section2.Mult(15, 20))
 
 }
