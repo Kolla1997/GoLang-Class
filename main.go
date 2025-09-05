@@ -3,13 +3,14 @@ package main
 import (
 	// "GoLang_Class/Section1"
 	// "GoLang_Class/Section2"
-	// "GoLang_Class/Section3"
-	// "GoLang_Class/Tasks"
 	"GoLang_Class/Section3"
+	// "GoLang_Class/Tasks"
 	"fmt"
 )
 
 func main() {
+	defer fmt.Println("The end of the main function") // defer statement
+	defer fmt.Println("This is the second defer statement before the first one")
 	// var temp float32
 	// var day int
 	// var limit int
@@ -42,4 +43,5 @@ func main() {
 	// Tasks.Task_day3() // Day 3 Task
 	Section3.Arrays()
 	Section3.Slices()
+	Section3.Interfaces()
 }
