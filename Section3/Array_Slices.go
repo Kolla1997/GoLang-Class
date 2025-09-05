@@ -5,6 +5,16 @@ import (
 	"reflect"
 )
 
+func array_vari_func(num ...int) {
+	fmt.Println("Array Variadic Function:", num)
+	total := 0
+	for _, val := range num {
+		total += val
+	}
+	fmt.Println("Sum:", total)
+
+}
+
 func Arrays() {
 	var numbs [5]int // declaring an empty array of integers with size 5
 	for i := 0; i < len(numbs); i++ {
@@ -26,6 +36,9 @@ func Arrays() {
 	for i, val := range names {
 		fmt.Println(i, "-", val)
 	}
+
+	numbs_var_func := []int{10, 20, 30, 40, 50}
+	array_vari_func(numbs_var_func...) // passing slice to variadic function
 }
 
 // Slices in Go
