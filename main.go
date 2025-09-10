@@ -41,6 +41,10 @@ func main() {
 	// fmt.Println("Subtraction with return value:", Section2.Sub(20, 10))
 	// fmt.Println("Multiplication with return value:", Section2.Mult(15, 20))
 	// Tasks.Task_day3() // Day 3 Task
+	// Section3.Arrays()
+	// Section3.Slices()
+	// Section3.Maps()
+	Section3.Structs()
 	Section3.Arrays()
 	Section3.Slices()
 	Section3.Interfaces()
